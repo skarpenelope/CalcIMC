@@ -15,10 +15,6 @@
   border-radius: 15px;
 }
 
-.quadrado div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .quadrado h4{
@@ -28,16 +24,7 @@
   
 }
 
-.quadrado input{
-  margin-bottom: 15px;
-  padding: 4px;
-  border-radius: 15px;
 
-}
-
-.quadrado fieldset{
-  margin-top: 180px;
-}
 
 
 
