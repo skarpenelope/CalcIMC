@@ -48,16 +48,41 @@ body{
   gap: 8px;
 }
 
-#calculadora{
+#calculator{
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
   color: #f8fafc;
   background-color: #262626;
-
-
+  border-radius: 8px;
 }
+
+.calculadora input{
+  gap: 10px;
+  border-radius: 4px;
+  background-color:#363333;
+  color: #f8fafc;
+  
+}
+
+#forms{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+button{
+  border-radius: 5px;
+  background-color:#f8fafc;
+  transition: backgroun-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #b9bcbe;
+}
+
 
 
 

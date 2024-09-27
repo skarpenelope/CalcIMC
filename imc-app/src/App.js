@@ -1,29 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
 import fitimg from "./fitimg.svg"
+import React, {useState} from 'react';
 
 //#6563FF
 
 
 function App() {
+  const [peso, setPeso] = useState('');
+  const [altura, setAltura] = useState('');
+  const [resultado, setResultado] = useState(null);
+  const [emoji, setEmoji] = useState('')
+
+  const calcularImc = (e) => {
+    e.preventDefault();
+    if(peso && altura) {
+      const alturaEmMetros = parseFloat(altura);
+      const pesoemkg = parseFloat(peso);
+
+      const imc = (pesoemkg/(alturaEmMetros*alturaEmMetros)).toFixed(2);
+
+      setResultado(imc)
+      setEmoji(EmojiForImc(imc))
+
+    }
+  };
   return (
     
     
     <div className="App">
-      <header>
-
-      </header>
+      <header></header>
 
       <main id="container">
-        <section id="img">
+        <section id="img" alt="fitness">
           <img src={fitimg}/>
 
         </section>
         <div className="calculadora">
           <section id="calculator">
-            <form>
+            <form id="forms" onSubmit={calcularImc}>
+              <h1>Calculadora - IMC</h1>
               <div className="input-box">
-                <label id="peso">
+                <label htmlFor="pesox">
                   Peso em kg
                 </label>
 
@@ -31,18 +49,18 @@ function App() {
                   <span class="material-symbols-outlined">
                     weight
                   </span>
-                  <input type="number" id="weight" required/>
+                  <input type="number" id="weight" value={peso} onChange={(e) => setPeso(e.target.value)} required/>
                   <span>kg</span>
                 </div>
 
-                <label>Altura em metros</label>
+                <label htmlFor="alturay">Altura em metros</label>
 
                 <div className="icon-height">
                 <div className="icon-weight">
                   <span class="material-symbols-outlined">
-                    weight
+                    straighten
                   </span>
-                  <input type="number" id="height" required/>
+                  <input type="number" id="height" value={altura} onChange={(e) => setAltura(e.target.value)} required/>
                   <span>M</span>
                   </div>
                 </div>
@@ -51,7 +69,16 @@ function App() {
               </div>
 
               <button id="botão"> calcular </button>
+
+              
             </form>
+
+            
+            <div id='resultadoTexto'>
+              <h2> Seu IMC: {resultado} </h2>
+
+            </div>
+            
             
           </section>
         </div>
