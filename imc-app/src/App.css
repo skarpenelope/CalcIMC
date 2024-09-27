@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*#6563FF */
+
+:root{
+  --details-color: #6563FF
+
+}
+
+*{
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #18181b;
+}
+
+#container{
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  
+}
 .App{
   display: flex;
   justify-content: center;
@@ -8,20 +35,28 @@
   margin-top: 100px;
 }
 
-.quadrado{
-  background-color: palevioletred;
-  width: 400px;
-  height: 400px;
-  border-radius: 15px;
-}
+#img img{
+  display: flex;
+  width: 26rem;
 
 }
 
-.quadrado h4{
-  margin-bottom: 5px;
-  margin-top: 0;
-  font-family: 'poppins';
-  
+/*bloco de input*/
+.icon-weight{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#calculadora{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: #f8fafc;
+  background-color: #262626;
+
+
 }
 
 
