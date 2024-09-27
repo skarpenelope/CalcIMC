@@ -10,7 +10,6 @@ function App() {
   const [peso, setPeso] = useState('');
   const [altura, setAltura] = useState('');
   const [resultado, setResultado] = useState(null);
-  const [emoji, setEmoji] = useState('')
 
   const calcularImc = (e) => {
     e.preventDefault();
@@ -21,7 +20,6 @@ function App() {
       const imc = (pesoemkg/(alturaEmMetros*alturaEmMetros)).toFixed(2);
 
       setResultado(imc)
-      setEmoji(EmojiForImc(imc))
 
     }
   };
