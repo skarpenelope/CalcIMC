@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/CalcIMC/static/css/main.d63585d3.chunk.css",
+    "main.js": "/CalcIMC/static/js/main.3ec589b8.chunk.js",
+    "main.js.map": "/CalcIMC/static/js/main.3ec589b8.chunk.js.map",
+    "runtime~main.js": "/CalcIMC/static/js/runtime~main.c12e6572.js",
+    "runtime~main.js.map": "/CalcIMC/static/js/runtime~main.c12e6572.js.map",
+    "static/js/2.bbc244fd.chunk.js": "/CalcIMC/static/js/2.bbc244fd.chunk.js",
+    "static/js/2.bbc244fd.chunk.js.map": "/CalcIMC/static/js/2.bbc244fd.chunk.js.map",
+    "static/js/3.ba8b7f13.chunk.js": "/CalcIMC/static/js/3.ba8b7f13.chunk.js",
+    "static/js/3.ba8b7f13.chunk.js.map": "/CalcIMC/static/js/3.ba8b7f13.chunk.js.map",
+    "index.html": "/CalcIMC/index.html",
+    "precache-manifest.83cf4fd09f1fc84a87785c2fa7654a27.js": "/CalcIMC/precache-manifest.83cf4fd09f1fc84a87785c2fa7654a27.js",
+    "service-worker.js": "/CalcIMC/service-worker.js",
+    "static/css/main.d63585d3.chunk.css.map": "/CalcIMC/static/css/main.d63585d3.chunk.css.map",
+    "static/media/fitimg.svg": "/CalcIMC/static/media/fitimg.6d12dd5a.svg",
+    "static/media/logo.svg": "/CalcIMC/static/media/logo.06e73328.svg"
+  }
+}
